@@ -1,5 +1,3 @@
-@import 'fonts';
-
 *{
     border: 0;
     box-sizing: border-box;
@@ -10,4 +8,5 @@
 html,
 body{
     font-family: 'SegoeUI';
+    background-color: #EAEAEA;
 }
