@@ -1,0 +1,168 @@
+aside#sidebar{
+    height: 100%;
+    background-color: #F4F4F4;
+    overflow: auto;
+    position: relative;
+    width: 220px;
+}
+
+aside#sidebar h2{
+    align-items: center;
+    color: #808080;
+    display: flex;
+    font-family: 'SegoeUI-Semibold';
+    font-size: 12px;
+    font-weight: normal;
+    height: 48px;
+    line-height: 16px;
+    padding: 0 0 0 15px;
+}
+
+aside#sidebar nav.menu li{
+    width: 100%;
+    display: inline-block;
+}
+
+aside#sidebar nav.menu a{
+    align-items: center;
+    border-left: 2px solid #F4F4F4;
+    display: flex;
+    font-family: 'SegoeUI-Semibold';
+    font-size: 14px;
+    color: #808080;
+    padding: 10px 22px 10px 15px;
+    text-decoration: none;
+}
+
+aside#sidebar nav.menu a.active{
+    background-color: #EAEAEA;
+    border-color: #0078D7;
+}
+
+aside#sidebar nav.menu svg{
+    fill: #808080;
+    height: 12px;
+    margin-right: 11px;
+    width: 12px;
+}
+
+aside#sidebar nav.tags a{
+    align-items: center;
+    color: #808080;
+    display: flex;
+    font-size: 14px;
+    padding: 10px 22px 10px 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+aside#sidebar nav.tags li:last-child{
+    margin-bottom: 10px;
+}
+
+aside#sidebar nav.tags li a.active,
+aside#sidebar nav.tags li a:hover,
+aside#sidebar a.btn-done:hover{
+    background-color: #EAEAEA;
+}
+
+aside#sidebar nav.tags span.color{
+    background-color: red;
+    display: inline-block;
+    height: 6px;
+    margin-right: 9px;
+    width: 16px;
+}
+
+aside#sidebar nav.tags span.count{
+    color: #808080;
+    font-size: 12px;
+    text-decoration: none;
+    position: absolute;
+    right: 22px;
+}
+
+aside#sidebar nav.tags a.btn-new-tag span{
+    border: 1px solid #808080;
+    color: #808080;
+    display: inline-block;
+    font-size: 13px;
+    height: 12px;
+    line-height: 7px;
+    margin-right: 9px;
+    position: relative;
+    text-align: center;
+    width: 16px;
+}
+
+aside#sidebar nav.tags form{
+    display: none;
+    align-items: center;
+    padding: 0 22px 0 15px;
+}
+
+aside#sidebar nav.tags form.show{
+    display: flex;
+}
+
+aside#sidebar nav.tags input{
+    background: none;
+    border: 1px solid #0078D7;
+    color: #333333;
+    display: flex;
+    flex: 1;
+    font-family: 'SegoeUI';
+    font-size: 14px;
+    height: 37px;
+    padding: 0 5px;
+}
+
+aside#sidebar nav.tags input.error{
+    border-color: #FF0E35;
+}
+
+aside#sidebar nav.tags button{
+    width: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+aside#sidebar nav.tags button svg{
+    width: 16px;
+    height: 16px;
+    float: right;
+    fill: #0078D7;
+}
+
+aside#sidebar a.btn-done{
+    border-top: 1px solid #D8D8D8;
+    color: #808080;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 22px 10px 15px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 770px){
+    aside#sidebar{
+        position: absolute;
+        top: 0;
+        left: -220px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape){
+    aside#sidebar a.btn-done{
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    aside#sidebar{
+        width: 100%;
+        left: -100%;
+    }
+}
