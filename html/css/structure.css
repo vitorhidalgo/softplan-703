@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 html,
@@ -17,6 +20,7 @@ body{
 }
 
 .container{
+    display: flex;
     height: 100%;
     margin: 0 auto;
     max-width: 1920px;
