@@ -1,0 +1,226 @@
+div.list-cards{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 22px 32px 0 32px;
+    width: calc(100% - 220px);
+}
+
+div.list-cards .card{
+    align-items: center;
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 25px;
+    width: 100%;
+}
+
+div.list-cards .card .summary{
+    width: 38%;
+    padding-right: 20px;
+}
+
+div.list-cards .card .summary ul.parts{
+    display: block;
+}
+
+div.list-cards .card .summary ul.parts li{
+    color: #808080;
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+div.list-cards .card .summary ul.parts li svg{
+    height: 12px;
+    width: 12px;
+}
+
+div.list-cards .card .summary ul.parts li strong{
+    font-family: 'SegoeUI-Semibold';
+}
+
+div.list-cards .card .summary ul.parts li.active svg{
+    fill: #01AE76;
+}
+
+div.list-cards .card .summary ul.parts li.passive svg{
+    fill: #FF5766;
+}
+
+div.list-cards .card .summary h3{
+    color: #4D4D4D;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 18px;
+    width: 100%;
+}
+
+div.list-cards .card .summary h3 strong{
+    font-family: 'SegoeUI-Semibold';
+}
+
+div.list-cards .card .summary ul.stripe-number{
+    display: inline-block;
+}
+
+div.list-cards .card .summary ul.stripe-number li{
+    color: #808080;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+div.list-cards .card .summary ul.stripe-number li span{
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    color: #FF0E35;
+    padding: 2px 10px;
+}
+
+div.list-cards .open-folder a{
+    border-left: 1px solid #EAEAEA;
+    border-right: 1px solid #EAEAEA;
+    color: #4D4D4D;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.list-cards .open-folder a:hover{
+    color: #707070;
+}
+
+div.list-cards .open-folder a svg{
+    height: 11px;
+    fill: #707070;
+    margin-right: 10px;
+    transform: rotate(90deg);
+    width: 14px;
+}
+
+div.list-cards .tags{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    padding: 0 30px;
+}
+
+div.list-cards .tags a.btn-add-tags{
+    display: inline-block;
+    height: 26px;
+    text-align: center;
+    text-decoration: none;
+    width: 26px;
+}
+
+div.list-cards .tags a.btn-add-tags:hover{
+    background-color: #EAEAEA;
+}
+
+div.list-cards  ul.list-tags li{
+    display: inline-block;
+}
+
+div.list-cards ul.list-tags a{
+    background-color: #20BBD3;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 3px;
+    position: relative;
+    text-decoration: none;
+}
+
+div.list-cards ul.list-tags a:after{
+    background-color: #20BBD3;
+    color: #fff;
+    content: '...x';
+    display: none;
+    font-size: 12px;
+    padding: 0 6px 0 0;
+    position: absolute;
+    top: 0; right: 2px; bottom: 0;
+    z-index: 1;
+}
+
+div.list-cards ul.list-tags a:hover:after{
+    display: block;
+}
+
+@media only screen and (max-width: 1500px){
+    div.list-cards .open-folder a{
+        padding: 10px 50px;
+    }
+
+    div.list-cards .tags{
+        padding: 0 10px;
+    }
+
+    div.list-cards ul.list-tags{
+        margin-left: 20px;
+    }
+
+    div.list-cards .tags a.btn-add-tags{
+        display: block;
+    }
+
+    div.list-cards .tags a.btn-add-tags:hover{
+        background-color: none;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    div.list-cards{
+        padding: 15px;
+        width: 100%;
+    }
+
+    div.list-cards .card{
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    div.list-cards .card .summary h3{
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (max-width: 600px), (max-width: 770px) and (orientation: landscape){
+    div.list-cards .card{
+        display: inline-block;
+    }
+
+    div.list-cards .card .summary{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    div.list-cards .card .summary ul.stripe-number li:first-child{
+        width: 100%;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    div.list-cards .card .open-folder{
+        width: 100%;
+    }
+    
+    div.list-cards .card .open-folder a{
+        border: none;
+        border-top: 1px solid #EAEAEA;
+        border-bottom: 1px solid #EAEAEA;
+        padding: 15px 0;
+        margin: 15px 0;
+    }
+
+    div.list-cards .tags{
+        width: 100%;
+        padding: 0;
+    }
+}

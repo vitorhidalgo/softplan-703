@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale-1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#0063B1">
+    <link rel="icon" type="image/png" href="favicon.png">
     <title>SOFTPLAN</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/structure.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/cards.css">
 </head>
 <body>
     <header id="header">
@@ -101,6 +103,42 @@
             <form action="">
                 <input type="search" name="" id="" placeholder="Buscar">
             </form>
+        </div>
+        <div class="list-cards" id="cards">
+            <div class="card">
+                <div class="summary">
+                    <ul class="parts">
+                        <li class="active">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 0a16 16 0 1 0 16 16A16.047 16.047 0 0 0 16 0zm8 18h-6v6h-4v-6H8v-4h6V8h4v6h6z"/></svg>
+                            Reinaldo<strong>+2</strong>
+                        </li>
+                        <li class="passive">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 0a16 16 0 1 0 16 16A16.047 16.047 0 0 0 16 0zm8 18H8v-4h16z"/></svg>
+                            Unimed
+                        </li>
+                    </ul>
+                    <h3>Procedimento Comun - <strong>Requerimento de Reintegração de Posse</strong></h3>
+                    <ul class="stripe-number">
+                        <li>0303650-04.2016.88.24.0090</li>
+                        <li><span>Justição Gratuita</span></li>
+                        <li><span>Estatuto Idoso</span></li>
+                    </ul>
+                </div>
+                <div class="open-folder">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 25.4"><path d="M0 25.4h28.7l3.1-16.1h-3V2.9H14.3L11.4 0H0zm2.4-2l3.1-8.9h8l3.2-3.2h12.6L27 23.4zM13.5 4.9h13.4v4.4h-11l-3.2 3.2H4.1L2 18.6V2.1h8.6z"/></svg>
+                        Abrir Pasta
+                    </a>
+                </div>
+                <div class="tags">
+                    <a href="#" class="btn-add-tags"><span>+</span></a>
+                    <ul class="list-tags">
+                        <li><a href="#">Possessório</a></li>
+                        <li><a href="#">Possessório</a></li>
+                        <li><a href="#">Possessório</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </body>

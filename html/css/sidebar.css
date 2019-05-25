@@ -1,6 +1,7 @@
 aside#sidebar{
-    height: 100%;
     background-color: #F4F4F4;
+    float: left;
+    height: 100%;
     overflow: auto;
     position: relative;
     width: 220px;
