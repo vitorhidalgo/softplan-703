@@ -1,10 +1,13 @@
 import React from 'react';
-import './App.css';
+import { Provider } from 'react-redux';
 
-function App() {
-  return (
+import './App.css';
+import store from './store';
+
+const App = () => (
+  <Provider store={store}>
     <h1>SOFTPLAN</h1>
-  );
-}
+  </Provider>
+);
 
 export default App;
