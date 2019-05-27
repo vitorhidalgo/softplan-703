@@ -4,9 +4,11 @@ import { Provider } from 'react-redux';
 import './App.css';
 import store from './store';
 
+import Routes from './routes';
+
 const App = () => (
   <Provider store={store}>
-    <h1>SOFTPLAN</h1>
+    <Routes />
   </Provider>
 );
 
